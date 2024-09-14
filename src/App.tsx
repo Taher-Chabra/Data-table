@@ -35,7 +35,7 @@ function App() {
       setLoading(true);
 
       const response = await fetchData(page);
-      if (response && response.data) {
+      if (response) {
         setFetchedData(response);
       } else {
         console.error("No data found");
@@ -107,7 +107,7 @@ function App() {
             setSelectedRows(e.value);
           }}
           dataKey="id"
-          loading={initialLoad}
+          loading={loading}
           tableStyle={{ minWidth: "50rem" }}
           rows={fetchedData?.pagination?.limit}
           scrollable
