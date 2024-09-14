@@ -8,7 +8,6 @@ import { Skeleton } from "primereact/skeleton";
 import { Button } from "primereact/button";
 import "./App.css";
 import { OverlayPanel } from "primereact/overlaypanel";
-import { ProgressSpinner } from "primereact/progressspinner";
 
 interface RowData {
   title: string;
