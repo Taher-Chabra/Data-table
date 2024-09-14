@@ -1,4 +1,4 @@
-# PrimeReact DataTable with Custom Row Selection
+# PrimeReact DataTable with Custom Rows Selection
 
 This project demonstrates the implementation of a dynamic data table using PrimeReact's `DataTable` component. It fetches data from an external API and includes custom features like row selection, pagination, and a loading spinner.
 
@@ -48,7 +48,7 @@ To run this project locally, follow these steps:
 4. Start the development server:
 
   ```bash
-  npm start
+  npm run dev
   ```
 
   or if you are using Yarn:
@@ -77,3 +77,7 @@ If you would like to contribute to this project, please follow these steps:
 4. Commit your changes (`git commit -m 'Add some feature'`).
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a pull request.
+
+## Live Demo
+
+You can view the live demo of the project here: [React-data-table]('https://react-data-table-cmp.netlify.app/').
