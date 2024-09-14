@@ -24,7 +24,6 @@ function App() {
   const [firstRowIndex, setFirstRowIndex] = useState<number>(0); // First row index for pagination
   const [currentPage, setCurrentPage] = useState<number>(1); // Current page number
   const [loading, setLoading] = useState<boolean>(false);
-  const [initialLoad, setInitialLoad] = useState<boolean>(true);
   const selectPanelRef = useRef<OverlayPanel | null>(null);
   const [inputRows, setInputRows] = useState<number | undefined>();
   const [remainingRows, setRemainingRows] = useState<number>(0);
@@ -85,7 +84,6 @@ function App() {
   // Fetch data when component mounts or page changes
   useEffect(() => {
     fetchDataFromApi(currentPage);
-    if (initialLoad) setInitialLoad(false);
   }, [currentPage]);
 
   // Handle selection of rows when page changes
