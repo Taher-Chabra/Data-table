@@ -80,4 +80,4 @@ If you would like to contribute to this project, please follow these steps:
 
 ## Live Demo
 
-You can view the live demo of the project here: [React-data-table]('https://react-data-table-cmp.netlify.app/').
+You can view the live demo of the project here : [DataTable](https://react-data-table-cmp.netlify.app/)
