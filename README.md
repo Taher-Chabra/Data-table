@@ -1,50 +1,79 @@
-# React + TypeScript + Vite
+# PrimeReact DataTable with Custom Row Selection
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates the implementation of a dynamic data table using PrimeReact's `DataTable` component. It fetches data from an external API and includes custom features like row selection, pagination, and a loading spinner.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic Data Fetching**
+- **Custom Row Selection**
+- **Responsive Design**
+- **Scrollable DataTable**
+- **Custom Pagination**
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To run this project locally, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [Node.js](https://nodejs.org/) (v14.x or later)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Steps
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  ```bash
+  git clone https://github.com/Taher-Chabra/Data-table.git
+  ```
+
+2. Navigate to the project directory:
+
+  ```bash
+  cd Data-table
+  ```
+
+3. Install the dependencies:
+
+  ```bash
+  npm install
+  ```
+
+  or if you are using Yarn:
+
+  ```bash
+  yarn install
+  ```
+
+4. Start the development server:
+
+  ```bash
+  npm start
+  ```
+
+  or if you are using Yarn:
+
+  ```bash
+  yarn start
+  ```
+
+5. Open your browser and navigate to `http://localhost:3000` to see the application running.
+
+## Usage
+
+Once the application is running, you can interact with the data table by:
+
+- Selecting rows
+- Navigating through pages
+- Selecting rows through custom select panel
+
+## Contributing
+
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
